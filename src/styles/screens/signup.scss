@@ -1,0 +1,16 @@
+.signup {
+  .signup-body {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .text {
+      margin-bottom: 40px;
+    }
+    input {
+      width: 300px;
+      margin-bottom: 10px;
+    }
+  }
+}

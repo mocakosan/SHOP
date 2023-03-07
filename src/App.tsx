@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TopMenu } from "./components/TopMenu";
+import { Login } from "./screens/Login";
 import { Main } from "./screens/Main";
 import { Shop } from "./screens/Shop";
+import { Signup } from "./screens/signup";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </div>
