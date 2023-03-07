@@ -11,6 +11,10 @@ export const TopMenu = () => {
         <div className="menu">text</div>
         <div className="menu">text</div>
       </div>
+      <div className="user">
+        <div className="login">login</div>
+        <div className="join">join</div>
+      </div>
     </div>
   );
 };

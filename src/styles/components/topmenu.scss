@@ -5,12 +5,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  font-size: 20px;
   .topmenu {
     display: flex;
     align-items: center;
     justify-content: center;
     .menu {
+      margin-right: 30px;
+    }
+  }
+  .user {
+    display: flex;
+    .login {
       margin-right: 30px;
     }
   }
