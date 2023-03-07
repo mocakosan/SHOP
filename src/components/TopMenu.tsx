@@ -1,13 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/components/topmenu.scss";
 
 export const TopMenu = () => {
   return (
     <div className="top">
-      <div className="logo">쌀</div>
+      <Link to="/">
+        <div className="logo">Shop</div>
+      </Link>
       <div className="topmenu">
-        <div className="menu">쌀효능</div>
-        <div className="menu">SHOP</div>
+        <Link to="/shop">
+          <div className="menu">SHOP</div>
+        </Link>
+        <div className="menu">text</div>
         <div className="menu">text</div>
         <div className="menu">text</div>
       </div>
