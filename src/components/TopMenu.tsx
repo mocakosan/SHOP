@@ -50,7 +50,7 @@ export const TopMenu = () => {
             isActive ? activeStyle : { textDecoration: "none" }
           }
         >
-          <div className="menu">text3</div>
+          <div className="menu4">text3</div>
         </NavLink>
       </div>
       <div className="user">

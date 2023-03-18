@@ -1,3 +1,22 @@
+@media all and (max-width: 400px) {
+  .top {
+    .logo {
+      font-size: 10px;
+    }
+    .topmenu {
+      font-size: 10px;
+      .menu {
+        margin-right: 10px;
+      }
+    }
+    .user {
+      font-size: 10px;
+      .login {
+        margin-right: 10px;
+      }
+    }
+  }
+}
 .top {
   max-width: 1300px;
   height: 50px;
@@ -16,8 +35,9 @@
   }
   .user {
     display: flex;
+    align-content: center;
     .login {
-      margin-right: 30px;
+      margin-right: 15px;
     }
   }
 }
