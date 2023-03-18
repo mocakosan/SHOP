@@ -5,6 +5,7 @@ import { Login } from "./screens/Login";
 import { Main } from "./screens/Main";
 import { Shop } from "./screens/Shop";
 import { Signup } from "./screens/signup";
+import { Text } from "./screens/Text";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/text" element={<Text />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>

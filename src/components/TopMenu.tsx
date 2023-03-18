@@ -1,28 +1,75 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "../styles/components/topmenu.scss";
 
 export const TopMenu = () => {
+  const activeStyle: any = {
+    color: "green",
+    textDecoration: "none",
+  };
   return (
     <div className="top">
-      <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-        <div className="logo">Shop</div>
-      </Link>
+      <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive ? activeStyle : { textDecoration: "none" }
+        }
+      >
+        <div className="logo" style={{ textDecoration: "none" }}>
+          SHOP
+        </div>
+      </NavLink>
       <div className="topmenu">
-        <Link to="/shop" style={{ textDecoration: "none", color: "black" }}>
-          <div className="menu">SHOP</div>
-        </Link>
-        <div className="menu">text</div>
-        <div className="menu">text</div>
-        <div className="menu">text</div>
+        <NavLink
+          to="/shop"
+          style={({ isActive }) =>
+            isActive ? activeStyle : { textDecoration: "none" }
+          }
+        >
+          <div className="menu">Shopping</div>
+        </NavLink>
+        <NavLink
+          to="/text"
+          style={({ isActive }) =>
+            isActive ? activeStyle : { textDecoration: "none" }
+          }
+        >
+          <div className="menu">text1</div>
+        </NavLink>
+        <NavLink
+          to="/text"
+          style={({ isActive }) =>
+            isActive ? activeStyle : { textDecoration: "none" }
+          }
+        >
+          <div className="menu">text2</div>
+        </NavLink>
+        <NavLink
+          to="/text"
+          style={({ isActive }) =>
+            isActive ? activeStyle : { textDecoration: "none" }
+          }
+        >
+          <div className="menu">text3</div>
+        </NavLink>
       </div>
       <div className="user">
-        <Link to="/login" style={{ textDecoration: "none", color: "black" }}>
+        <NavLink
+          to="/login"
+          style={({ isActive }) =>
+            isActive ? activeStyle : { textDecoration: "none" }
+          }
+        >
           <div className="login">login</div>
-        </Link>
-        <Link to="/signup" style={{ textDecoration: "none", color: "black" }}>
+        </NavLink>
+        <NavLink
+          to="/signup"
+          style={({ isActive }) =>
+            isActive ? activeStyle : { textDecoration: "none" }
+          }
+        >
           <div className="signup">signup</div>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

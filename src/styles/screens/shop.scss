@@ -1,0 +1,10 @@
+.shop {
+  .shop-body {
+    display: flex;
+    flex-direction: column;
+    .shop-button {
+      width: 100px;
+      justify-content: flex-end;
+    }
+  }
+}
