@@ -12,9 +12,11 @@ export const Upload = () => {
     <div className="upload">
       <div className="upload-body">
         <div className="body-image">
-          {selectedImage && (
-            <img src={URL.createObjectURL(selectedImage)} alt="Selected" />
-          )}
+          <div className="image-size">
+            {selectedImage && (
+              <img src={URL.createObjectURL(selectedImage)} alt="Selected" />
+            )}
+          </div>
           <ImageUploadButton onImageSelect={handleImageSelect} />
         </div>
 
@@ -27,7 +29,7 @@ export const Upload = () => {
             />
           </div>
           <div className="content-ct">
-            <input name="content" placeholder="내용을 입력하세요" />
+            <textarea placeholder="내용을 입력하세요" />
           </div>
         </div>
       </div>
