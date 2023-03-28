@@ -6,6 +6,7 @@ import { Main } from "./screens/Main";
 import { Shop } from "./screens/Shop";
 import { Signup } from "./screens/signup";
 import { Text } from "./screens/Text";
+import { Upload } from "./screens/Upload";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/text" element={<Text />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/upload" element={<Upload />} />
         </Routes>
       </BrowserRouter>
     </div>

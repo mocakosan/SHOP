@@ -13,7 +13,7 @@ export const Main = () => {
   return (
     <div className="main">
       <SimpleImageSlider
-        width={896}
+        width={1024}
         height={504}
         images={images}
         showBullets={true}
