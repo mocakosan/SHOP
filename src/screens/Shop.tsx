@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/screens/shop.scss";
 
 export const Shop = () => {
   const [isOpen, setIsOpen]: any = useState(false);
   const [boardList, setboardList]: any = useState([]);
+  const navigate = useNavigate();
   return (
     <div className="shop">
       <div className="shop-body">
@@ -17,7 +18,7 @@ export const Shop = () => {
 
         <div className="shop-board">
           {boardList.map((item: any) => {
-            <div className="board-body">
+            <div className="board-body" key={item.id}>
               <img src="" alt="이미지" />
               <div className="body-ct">
                 <div className="board-ct">
@@ -37,7 +38,8 @@ export const Shop = () => {
                       <span className="close" onClick={() => setIsOpen(false)}>
                         &times;
                       </span>
-                      <button>수정</button>
+
+                      <button onClick={() => {}}>수정</button>
                       <button>삭제</button>
                     </div>
                   </div>
@@ -63,7 +65,13 @@ export const Shop = () => {
                     <span className="close" onClick={() => setIsOpen(false)}>
                       &times;
                     </span>
-                    <button>수정</button>
+                    <button
+                      onClick={() => {
+                        navigate("/update");
+                      }}
+                    >
+                      수정
+                    </button>
                     <button>삭제</button>
                   </div>
                 </div>
