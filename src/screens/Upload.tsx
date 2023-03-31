@@ -26,6 +26,7 @@ export const Upload = () => {
               name="title"
               color="skyblue"
               placeholder="제목을 입력하세요"
+              className="title"
             />
           </div>
           <div className="content-ct">
